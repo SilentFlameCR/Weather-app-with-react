@@ -23,7 +23,7 @@ class App extends React.Component {
         const api_call = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`);
         const data = await api_call.json();
         
-        if(city && country) {
+        if(city && country && data.message != 'city not found') {
             console.log(data);
         
             this.setState({
@@ -43,12 +43,6 @@ class App extends React.Component {
                 description: undefined,
                 error: "Please enter a valid city & country!",
                 weatherConditions: 'cold'
-            });
-        }
-        
-        if(data.message == 'city not found') {
-            this.setState({
-                error: "Please enter a valid city & country!"
             });
         }
         
