@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+body {
+  font-family: "Open Sans", serif;
+}
+
+.wrapper {
+/*  background: linear-gradient(to right, #e67e22, #e74c3c);*/
+/*
+  background: linear-gradient(to right, #81D8D0
+, #0E4D92);
+*/
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*DIFFERENT GRADIENTS*/
+.wrapper-gradient-cold {
+  background: linear-gradient(to right, #81D8D0
+, #0E4D92);
+}
+
+.wrapper-gradient-ice-cold {
+  background: linear-gradient(to right, #d3cce3
+, #e9e4f0);
+}
+
+.wrapper-gradient-hot {
+  background: linear-gradient(to right, #22c1c3, #fdbb2d);
+}
+
+.wrapper-gradient-very-hot {
+  background: linear-gradient(to right, #e67e22, #e74c3c);
+}
+
+.wrapper-gradient-rain {
+  background: linear-gradient(to right, #485563, #29323c);
+}
+
+.main {
+  height: 90vh;
+  background: #fff;
+  box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title-container {
+  height: 90vh;
+/*  background: url("img/bg.jpg") center center no-repeat;*/
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+}
+
+/*DIFFERENT IMAGES*/
+.weather-image-cold {
+  background: url("img/cold.jpg") center center no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.weather-image-ice-cold {
+  background: url("img/ice-cold.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.weather-image-hot {
+  background: url("img/very-hot.jpg") center center no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.weather-image-very-hot {
+  background: url("img/hot.jpg") center center no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.weather-image-rain {
+  background: url("img/rain.jpg") center center no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.title-container__title {
+  font-size: 50px;
+  letter-spacing: 2px;
+  line-height: 1.3;
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  text-shadow: -2px 2px #000;
+}
+
+.title-container__subtitle {
+  font-style: italic;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-family: "Merriweather", serif;
+  color: white;
+  text-shadow: -1px 1px #000;
+
+}
+
+.form-container {
+/*  background-color: #2c3e50;*/
+  background-color: #fff;
+  height: 90vh;
+  padding-top: 100px;
+  padding-left: 50px;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px #f16051;
+  width: 35%;
+  padding-bottom: 4px;
+  color: #000 !important;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+input[type="text"] { 
+    outline: none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px #fff inset;
+    -webkit-text-fill-color: #000 !important;
+}
+
+button {
+  border: 0;
+  padding: 8px 20px;
+  margin: 0 2px;
+  border-radius: 2px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #f16051;
+  color: #fff;
+  font-weight: 100;
+}
+
+button:active {
+  outline: none;
+}
+
+.weather__info {
+  width: 60%;
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.weather__key {
+  color: #f16051;
+  border-bottom: solid 2px rgba(255,255,255,0.06);
+  padding: 20px 0 20px 0;
+  font-weight: 400;
+}
+
+.weather__key:last-child {
+  border: 0;
+}
+
+.weather__value {
+  color: #000;
+  font-weight: 200;
+}
+
+.weather__error {
+  color: #f16051;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+#home-button {
+    position: relative;
+    top: -80px;
+    background: linear-gradient(to right, #232526, #414345);
+}
+
+#home-button a {
+    color: white;
+}
+
+#home-button a:hover {
+    text-decoration: none;
+}
